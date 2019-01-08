@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fanda.shirotest.dao.CtAdmMenuNodeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fanda.shirotest.entity.CtAdmMenuNode">
+        <id column="amn_id" property="amnId"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="menu_name" property="menuName"/>
+        <result column="menu_type" property="menuType"/>
+        <result column="is_open_window" property="isOpenWindow"/>
+        <result column="menu_url" property="menuUrl"/>
+        <result column="icon_inf" property="iconInf"/>
+        <result column="amn_ctime" property="amnCtime"/>
+        <result column="amn_mtime" property="amnMtime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        amn_id AS amnId, parent_id AS parentId, menu_name AS menuName, menu_type AS menuType, is_open_window AS isOpenWindow, menu_url AS menuUrl, icon_inf AS iconInf, amn_ctime AS amnCtime, amn_mtime AS amnMtime
+    </sql>
+
+    <select id="selectAll" resultType="com.fanda.shirotest.entity.CtAdmMenuNode">
+        select <include refid="Base_Column_List"/> from ct_adm_menu_node
+    </select>
+
+</mapper>
