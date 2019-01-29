@@ -11,6 +11,7 @@
     <modules>
         <module>mybatis-plus-generator</module>
         <module>mybatis-plus-2.1.7-generator</module>
+        <module>thread-pool</module>
     </modules>
 
 
