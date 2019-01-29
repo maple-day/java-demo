@@ -144,13 +144,9 @@ public class LambdaDemo {
                 .forEach(System.out::println);
     }
 
-    @Test
-    public void fun7() {
-        employees.stream()
-                .filter((e) -> e.getSalary() > 5000)
-                .skip(2) //跳过前两个
-                .distinct()//去重，注意：需要Employee重写hashCode 和 equals 方法
-                .forEach(System.out::println);
-    }
+
+
+
+
 
 }
