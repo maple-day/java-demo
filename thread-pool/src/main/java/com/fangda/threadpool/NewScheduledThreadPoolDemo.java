@@ -25,5 +25,7 @@ public class NewScheduledThreadPoolDemo {
                 }
             }, 3, TimeUnit.SECONDS);//定时3秒后 执行这个线程池
         }
+
+        newScheduledThreadPool.shutdown();
     }
 }

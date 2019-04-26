@@ -46,7 +46,7 @@ public class MybatisConfig {
         SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
         sqlSessionFactory.setDataSource(dataSource);
         // 配置mapper的扫描，找到所有的mapper.xml映射文件
-        Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml");
+        Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xmap");
         sqlSessionFactory.setMapperLocations(resources);
 
         return sqlSessionFactory;

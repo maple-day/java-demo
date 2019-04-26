@@ -24,6 +24,8 @@ public class newFixedThreadPoolDemo {
                 }
             });
         }
- 
+
+        newFixedThreadPool.shutdown();
+
     }
 }

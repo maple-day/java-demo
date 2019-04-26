@@ -7,5 +7,5 @@ spring:
   profiles:
     active: dev
 logging:
-  config: classpath:logback-spring.xml
+  config: classpath:logback-spring.xmap
   path: E:/log
