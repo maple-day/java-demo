@@ -3,6 +3,7 @@ package com.fangda.mojo;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
+import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 
 /**
@@ -15,7 +16,7 @@ import org.apache.maven.plugins.annotations.Mojo;
  * @eg mvn groupId:artifactId:version:goal
  *      mvn com.fangda:maven-plugin-demo:1.0-SNAPSHOT:myTest
  */
-@Mojo(name = "myTest")
+@Mojo(name = "myTest" ,defaultPhase = LifecyclePhase.PACKAGE)
 public class MyTestMojo extends AbstractMojo {
     public void execute() throws MojoExecutionException, MojoFailureException {
         getLog().info("hello world maven-plugin");
