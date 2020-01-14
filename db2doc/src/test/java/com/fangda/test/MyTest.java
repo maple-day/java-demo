@@ -18,6 +18,11 @@ import java.io.FileOutputStream;
 import java.math.BigInteger;
 import java.util.*;
 
+/**
+ * @description 打包的时候去除测试的 -Dmaven.test.skip=true
+ * @Author ccq
+ * @date 2020/1/14 8:52
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { SpringConfig.class })
 public class MyTest {

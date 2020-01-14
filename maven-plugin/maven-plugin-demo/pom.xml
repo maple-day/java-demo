@@ -11,6 +11,7 @@
 
     <artifactId>maven-plugin-demo</artifactId>
     <description>自定义maven插件项目</description>
+    <packaging>maven-plugin</packaging>
 
     <dependencies>
         <dependency>
