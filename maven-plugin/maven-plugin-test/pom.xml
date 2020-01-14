@@ -15,10 +15,44 @@
 
     <build>
         <plugins>
+            <!--指定插件版本，要不然默认版本会报错-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.5.2</version>
+            </plugin>
+
             <plugin>
                 <groupId>com.fangda</groupId>
                 <artifactId>maven-plugin-demo</artifactId>
                 <version>1.0-SNAPSHOT</version>
+                <!--<executions>
+                    <execution>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>myTest</goal>
+                        </goals>
+                    </execution>
+                </executions> 配置可控制插件在生命周期中执行-->
+                <configuration>
+                    <name>张三</name>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>1</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>paramTest</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>2</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>myTest</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

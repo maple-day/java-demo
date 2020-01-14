@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/db2doc/db2doc.iml" filepath="$PROJECT_DIR$/db2doc/db2doc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-demo.iml" filepath="$PROJECT_DIR$/.idea/java-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-plugin/maven-plugin.iml" filepath="$PROJECT_DIR$/maven-plugin/maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-plugin/maven-plugin-demo/maven-plugin-demo.iml" filepath="$PROJECT_DIR$/maven-plugin/maven-plugin-demo/maven-plugin-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-plugin/maven-plugin-test/maven-plugin-test.iml" filepath="$PROJECT_DIR$/maven-plugin/maven-plugin-test/maven-plugin-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-2.1.7-generator/mybatis-plus-2.1.7-generator.iml" filepath="$PROJECT_DIR$/mybatis-plus-2.1.7-generator/mybatis-plus-2.1.7-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-generator/mybatis-plus-generator.iml" filepath="$PROJECT_DIR$/mybatis-plus-generator/mybatis-plus-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-pool/thread-pool.iml" filepath="$PROJECT_DIR$/thread-pool/thread-pool.iml" />
+    </modules>
+  </component>
+</project>

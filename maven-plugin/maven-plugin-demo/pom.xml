@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
@@ -26,4 +26,15 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <!--指定插件版本，要不然默认版本会报错-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.5.2</version>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>

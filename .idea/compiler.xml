@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-plus-2.1.7-generator" />
+        <module name="thread-pool" />
+        <module name="mybatis-plus-generator" />
+        <module name="maven-plugin-demo" />
+        <module name="maven-plugin-test" />
+        <module name="db2doc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="db2doc" target="1.8" />
+      <module name="java-demo" target="1.8" />
+      <module name="maven-plugin" target="1.8" />
+      <module name="maven-plugin-demo" target="1.8" />
+      <module name="maven-plugin-test" target="1.8" />
+      <module name="mybatis-plus-2.1.7-generator" target="1.8" />
+      <module name="mybatis-plus-generator" target="1.8" />
+      <module name="thread-pool" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
