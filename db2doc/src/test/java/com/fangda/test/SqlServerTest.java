@@ -53,6 +53,7 @@ public class SqlServerTest {
         rt.setText(dataName + "数据库设计文档");
         rt.setFontSize(20);
         rt.setColor("333333");
+        rt.setColor("333333");
         rt.setBold(true);
 
         Map<String, String[][]> datas = dataInfo(dataName);
